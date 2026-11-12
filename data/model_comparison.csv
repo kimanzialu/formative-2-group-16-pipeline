@@ -1,0 +1,11 @@
+feature_set,model,accuracy,macro_f1
+History only,Gradient Boosting,0.224,0.20717562468848505
+Social only,Logistic Regression,0.216,0.19722024707318825
+Social only,Random Forest,0.216,0.19910337042412513
+Social only,Gradient Boosting,0.216,0.21655375102635305
+Merged (Social + History),Logistic Regression,0.216,0.21312198769370902
+History only,Random Forest,0.208,0.18538978607090062
+Merged (Social + History),Random Forest,0.208,0.1850576032305317
+Merged (Social + History),Majority baseline,0.208,0.06887417218543046
+History only,Logistic Regression,0.2,0.1911154807633681
+Merged (Social + History),Gradient Boosting,0.192,0.18377365842154575
