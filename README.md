@@ -23,21 +23,6 @@ demo.
 | Frank | Image preprocessing, face features, face model, integration and command-line application |
 | Kenny | Audio preprocessing, augmentations, voice features, and voice model |
 
-## Repository layout
-
-```text
-dataset/                         Source social and transaction CSV files
-audio/                           Two phrases recorded by each speaker
-data/                            Features, metrics, plots, and merged data
-models/                          Saved voice and product model artifacts
-face_recognition_project/        Face images, face pipeline, and face model
-scripts/product_pipeline.py      Tabular merge and product model
-scripts/audio_pipeline.py        Audio features, plots, and voice model
-scripts/voice_verify.py          Runtime voice verification helper
-integration_cli.py               Full face + voice + recommendation flow
-notebooks/                        Notebook index and individual notebooks
-```
-
 ## Some Submission contents
 
 | Deliverable | Location |
