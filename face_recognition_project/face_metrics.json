@@ -1,0 +1,16 @@
+{
+  "accuracy": 1.0,
+  "f1_macro": 1.0,
+  "log_loss": 0.2903878390789032,
+  "verification_threshold": 0.98,
+  "registered_validation_acceptance_rate": 0.6666666666666666,
+  "registered_image_count": 9,
+  "unauthorized_image_count": 3,
+  "registered_deployment_acceptance_rate": 1.0,
+  "unauthorized_rejection_rate": 1.0,
+  "unauthorized_predictions": [
+    "Aurele",
+    "Aurele",
+    "Aurele"
+  ]
+}
