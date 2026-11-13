@@ -22,5 +22,5 @@ def verify_voice(audio_path, bundle_path=MODEL_PATH):
     proba = bundle["model"].predict_proba(X)[0]
     i = int(np.argmax(proba))
     member, conf = bundle["classes"][i], float(proba[i])
-    ok = conf >= bundle["threshold"]
+    ok = (member != bundle.get("reject_class")) and (conf >= bundle["threshold"])
     return bool(ok), (member if ok else None), conf
