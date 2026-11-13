@@ -11,11 +11,9 @@ The project is intentionally simple and reproducible. It uses
 scikit-learn models, saved feature tables, real image/audio samples, and a
 command-line demonstration.
 
-## Submission status
-
 The repository includes the source data, reproducible pipelines, generated
 features, trained model artifacts, evaluation outputs, notebooks, integration
-demo, and the supporting [REPORT.md](REPORT.md).
+demo.
 
 ## Team responsibilities
 
