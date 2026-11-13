@@ -1,4 +1,4 @@
-# Formative 2: Multimodal Identity and Product Recommendation
+# Multimodal Identity and Product Recommendation
 
 This repository implements the complete assignment flow:
 
