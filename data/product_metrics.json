@@ -1,0 +1,42 @@
+{
+  "selected_model": "random_forest",
+  "model_comparison": [
+    {
+      "model": "majority_baseline",
+      "accuracy": 0.23333333333333334,
+      "precision_macro": 0.04666666666666667,
+      "recall_macro": 0.2,
+      "f1_macro": 0.07567567567567568,
+      "log_loss": 27.633467598323147
+    },
+    {
+      "model": "logistic_regression",
+      "accuracy": 0.03333333333333333,
+      "precision_macro": 0.02,
+      "recall_macro": 0.02857142857142857,
+      "f1_macro": 0.023529411764705882,
+      "log_loss": 2.1233052028317188
+    },
+    {
+      "model": "random_forest",
+      "accuracy": 0.13333333333333333,
+      "precision_macro": 0.10714285714285714,
+      "recall_macro": 0.14666666666666667,
+      "f1_macro": 0.12307692307692308,
+      "log_loss": 1.9860519790105904
+    }
+  ],
+  "rows_after_merge": 117,
+  "transaction_rows_before_merge": 150,
+  "unmatched_transaction_rows": 33,
+  "social_duplicate_rows": 5,
+  "transaction_duplicate_rows": 0,
+  "missing_values_after_cleaning": 0,
+  "target_distribution": {
+    "Sports": 28,
+    "Electronics": 27,
+    "Clothing": 22,
+    "Groceries": 20,
+    "Books": 20
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "accuracy": 1.0,
+  "f1_macro": 1.0,
+  "log_loss": 0.034071081702822754,
+  "unauthorized_rejection_rate": 1.0,
+  "authorized_verification_acceptance_rate": 0.8333333333333334,
+  "threshold": 0.9,
+  "threshold_source": "predeclared security threshold; not fit on final test recordings",
+  "authorized_test_recordings": 6,
+  "unauthorized_test_recordings": 6
+}

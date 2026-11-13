@@ -11,10 +11,14 @@ def extract_features(y, sr):
     feats["zcr"] = librosa.feature.zero_crossing_rate(y).mean()
     return feats
 
+
 def verify_voice(audio_path, bundle_path=MODEL_PATH):
     """Returns (is_approved, predicted_member, confidence)."""
     bundle = joblib.load(bundle_path)
-    y, sr = librosa.load(str(audio_path), sr=bundle["sr"])
+    path = Path(audio_path)
+    if not path.is_file():
+        raise FileNotFoundError(f"Audio file not found: {path}")
+    y, sr = librosa.load(str(path), sr=bundle["sr"])
     y, _ = librosa.effects.trim(y, top_db=bundle["top_db"])
     if len(y) < 0.2 * sr:
         return False, None, 0.0
@@ -23,4 +27,4 @@ def verify_voice(audio_path, bundle_path=MODEL_PATH):
     i = int(np.argmax(proba))
     member, conf = bundle["classes"][i], float(proba[i])
     ok = conf >= bundle["threshold"]
-    return bool(ok), (member if ok else None), conf
+    return bool(ok), member, conf
